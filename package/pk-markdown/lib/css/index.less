@@ -1,0 +1,65 @@
+.pk-markdown {
+  .tui-editor-defaultUI {
+    border: 0;
+
+    .emoji {
+      background-image: url(../../images/emoji.png);
+      background-repeat: no-repeat;
+      background-size: 16px 16px;
+      background-position: center;
+    }
+
+    .emoji-list {
+      overflow: auto;
+
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        float: left;
+        width: 20px;
+        height: 20px;
+        overflow: hidden;
+        text-align: center;
+        box-sizing: border-box;
+
+        &:hover {
+          border: 1px solid #aaa;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .fullscreen {
+      background-image: url(../../images/fs.png);
+      background-repeat: no-repeat;
+      background-size: 14px 14px;
+      background-position: center;
+
+      &.exit-fullscreen {
+        background-image: url(../../images/exit-fs.png);
+      }
+    }
+
+    .te-switch-button {
+      width: 120px;
+      font-size: 16px;
+    }
+  }
+
+  ul > li {
+    list-style: disc;
+  }
+
+  .viewer-image {
+    cursor: pointer;
+  }
+}
+
+.img-list {
+  .viewer-image {
+    cursor: pointer;
+  }
+}

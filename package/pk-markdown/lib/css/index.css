@@ -1,0 +1,51 @@
+.pk-markdown .tui-editor-defaultUI {
+  border: 0;
+}
+.pk-markdown .tui-editor-defaultUI .emoji {
+  background-image: url(../../images/emoji.png);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center;
+}
+.pk-markdown .tui-editor-defaultUI .emoji-list {
+  overflow: auto;
+}
+.pk-markdown .tui-editor-defaultUI .emoji-list ul {
+  margin: 0;
+  padding: 0;
+}
+.pk-markdown .tui-editor-defaultUI .emoji-list li {
+  float: left;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  text-align: center;
+  box-sizing: border-box;
+}
+.pk-markdown .tui-editor-defaultUI .emoji-list li:hover {
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+.pk-markdown .tui-editor-defaultUI .fullscreen {
+  background-image: url(../../images/fs.png);
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-position: center;
+}
+.pk-markdown .tui-editor-defaultUI .fullscreen.exit-fullscreen {
+  background-image: url(../../images/exit-fs.png);
+}
+.pk-markdown .tui-editor-defaultUI .te-switch-button {
+  width: 120px;
+  font-size: 16px;
+}
+.pk-markdown ul > li {
+  list-style: disc;
+}
+.pk-markdown .viewer-image {
+  cursor: pointer;
+}
+.img-list .viewer-image {
+  cursor: pointer;
+}
+/*# sourceMappingURL=index.css.map */

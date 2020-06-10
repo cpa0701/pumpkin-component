@@ -1,0 +1,58 @@
+{
+  "name": "pk-view",
+  "version": "0.0.1",
+  "description": "pk项目的组件库，包含头部，底部，和一个markdown编辑器（基于tui.editor，所见即所得（wysiwyg)，增加了emoji组件和全屏组件）",
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name pk-view --dest lib package/index.js"
+  },
+  "main": "lib/pk-view.umd.min.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "core-js": "^3.6.5",
+    "jquery": "^3.4.1",
+    "tui-editor": "^1.4.10",
+    "v-viewer": "^1.4.2",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.2.0",
+    "@vue/cli-plugin-eslint": "^4.2.0",
+    "@vue/cli-service": "^4.2.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.1.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "keywords": [
+    "markdown",
+    "wysiwyg",
+    "emoji"
+  ],
+  "author": "cpa0701",
+  "license": "ISC",
+  "homepage": "https://github.com/cpa0701/pk-markdown",
+  "bugs": "https://github.com/cpa0701/pk-markdown/issues",
+  "repository": "https://github.com/cpa0701/pk-markdown.git"
+}
