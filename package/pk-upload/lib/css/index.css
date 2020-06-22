@@ -1,0 +1,19 @@
+.breakpoint-upload progress {
+  width: 300px;
+}
+.breakpoint-upload #breakpoint-file {
+  display: none;
+}
+.breakpoint-upload /deep/ .ivu-progress {
+  width: 56%;
+}
+.breakpoint-upload /deep/ .ivu-btn {
+  margin-right: 10px;
+}
+.breakpoint-upload .breakpoint-btn,
+.breakpoint-upload .suspend-btn,
+.breakpoint-upload .continue-btn,
+.breakpoint-upload .cancel-btn {
+  color: #7B8F9A;
+}
+/*# sourceMappingURL=index.css.map */

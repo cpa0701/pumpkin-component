@@ -7,7 +7,9 @@
     <!--    图片文字分割-->
     <!--    <pk-markdown id="viewer" :value="value" viewer divide-img />-->
     <!--    <div class="img-list"></div>-->
-    <pk-footer />
+    <hr>
+    <p>断点续传组件</p>
+    <pk-upload upload-url="ws://42.48.104.46:15012/file-api/fileUpload/ws" />
   </div>
 </template>
 

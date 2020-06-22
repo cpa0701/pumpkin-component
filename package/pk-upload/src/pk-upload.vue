@@ -1,6 +1,6 @@
 <template>
   <div class="breakpoint-upload">
-    <progress v-show="isShowProgress" :value="percent" :max="100"></progress>
+    <progress v-show="isShowProgress" :value="percent" :max="100"></progress><span>{{ percent }}%</span>
     <p v-if="file">{{ file.name }}<a v-if="file.url" :href="file.url" style="margin-left: 20px">下载</a></p>
     <Button :disabled="percent>0&&percent<100" class="breakpoint-btn" @click="triggerFile">点击上传文件</Button>
     <input id="breakpoint-file" type="file" @change="onchange($event)">
@@ -10,9 +10,10 @@
   </div>
 </template>
 <script>
-import { md5File } from '../utils'
+import { md5File } from '../utils/md5'
 
 export default {
+  name: 'PkUpload',
   props: {
     /* 默认最大500M */
     maxSize: {
@@ -305,29 +306,6 @@ export default {
   },
 }
 </script>
-<style lang="scss" scoped>
-  .breakpoint-upload {
-    progress {
-      width: 300px;
-    }
-
-    #breakpoint-file {
-      display: none;
-    }
-
-    /deep/ .ivu-progress {
-      width: 56%;
-    }
-
-    /deep/ .ivu-btn {
-      margin-right: 10px;
-    }
-
-    .breakpoint-btn,
-    .suspend-btn,
-    .continue-btn,
-    .cancel-btn {
-      color: $pk-lightenText;
-    }
-  }
+<style scoped>
+  @import "../lib/css/index.css";
 </style>
