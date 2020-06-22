@@ -1,6 +1,6 @@
 {
   "name": "pk-view",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "pk项目的组件库，包含头部，底部，和一个markdown编辑器（基于tui.editor，所见即所得（wysiwyg)，增加了emoji组件和全屏组件）",
   "private": false,
   "scripts": {
