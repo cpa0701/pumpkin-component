@@ -1,4 +1,4 @@
-# pk-markdown
+# pk-component
 
 ![https://img.shields.io/badge/tui.editor-1.4.10-green](https://img.shields.io/badge/tui.editor-1.4.10-green)
 ![https://img.shields.io/badge/vue-2.6.10-brightgreen](https://img.shields.io/badge/vue-2.6.10-brightgreen)
