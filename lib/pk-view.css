@@ -1,4 +1,6 @@
-@charset "UTF-8";
+@charset "UTF-8";.ellipsis-content{display:inline-block}.showEllipsis{overflow:hidden;position:relative;padding-right:8px;word-break:break-all}.showEllipsis:after{position:absolute;bottom:0;content:"...";right:0;font-size:12px}
+
+
 /*!
  * Viewer.js v1.6.0
  * https://fengyuanchen.github.io/viewerjs
