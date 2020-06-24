@@ -30,7 +30,8 @@ export default {
     },
     uploadUrl: {
       type: String,
-      default: ''
+      default: '',
+      required: true
     },
     md5: {
       type: String,
@@ -189,7 +190,7 @@ export default {
         // 获取文件对象
         const file = (event.target.files || event.dataTransfer.files)[0]
         /* 判断文件大小是否超出限制 */
-        if (file.size > this.maxSize) {
+        if (file && file.size > this.maxSize) {
           return this.$emit('overSize')
         }
         this.file = file
