@@ -21,7 +21,6 @@ module.exports = {
       filename: 'index.html'
     }
   },
-  css: process.env.NODE_ENV === 'production' ? { extract: false, sourceMap: false } : {},
   configureWebpack: config => {
     config.externals = process.env.NODE_ENV === 'production' ? {
       vue: 'Vue',
