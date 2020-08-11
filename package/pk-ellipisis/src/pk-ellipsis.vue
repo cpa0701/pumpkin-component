@@ -23,7 +23,7 @@
 <script>
 let extraContent = ''
 export default {
-  name: 'PkEllipsis',
+  name: 'Ellipsis',
   props: {
     content: { // 内容
       type: String,
@@ -88,12 +88,7 @@ export default {
     },
     calc() {
       const targetElement = this.$refs.ellipsis
-      let lineHeight = window.getComputedStyle(targetElement)['line-height']
-      if (typeof lineHeight === 'string') {
-        lineHeight = 21
-      } else {
-        lineHeight = parseInt(lineHeight)
-      }
+      const lineHeight = parseInt(window.getComputedStyle(targetElement)['line-height'])
       const at = this.lines * lineHeight
       let tempStr = this.content === null ? '' : this.content
       targetElement.innerHTML = tempStr
@@ -144,5 +139,22 @@ export default {
 }
 </script>
 <style scoped>
-  @import "../lib/css/index.css";
+  .ellipsis-content {
+    display: inline-block;
+  }
+
+  .showEllipsis {
+    overflow: hidden;
+    position: relative;
+    padding-right: 8px;
+    word-break: break-all;
+  }
+
+  .showEllipsis:after {
+    position: absolute;
+    bottom: 0;
+    content: '...';
+    right: 0;
+    font-size: 12px;
+  }
 </style>
