@@ -1,3 +1,5 @@
+const CompressionPlugin = require('compression-webpack-plugin')
+
 'use strict'
 module.exports = {
   devServer: {
@@ -22,9 +24,17 @@ module.exports = {
     }
   },
   configureWebpack: config => {
-    config.externals = process.env.NODE_ENV === 'production' ? {
-      vue: 'Vue',
-      axios: 'axios'
-    } : {}
+    if (process.env.NODE_ENV === 'production') {
+      config.plugins.push(
+        new CompressionPlugin({
+          test: /\.js$|\.html$|\.css$/,
+          threshold: 10240
+        })
+      )
+      config.externals = {
+        vue: 'Vue',
+        axios: 'axios'
+      }
+    }
   }
 }
