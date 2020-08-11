@@ -50,6 +50,11 @@ export default {
       required: false,
       default: false
     },
+    showViewer: { // 是否使用viewer展示图片
+      type: Boolean,
+      required: false,
+      default: true
+    },
     divideImg: { // 是否需要将图片与文字分隔展示（需要有一个.img-list的dom容器装图片，且默认最多九张
       type: Boolean,
       required: false,
@@ -365,7 +370,7 @@ export default {
     },
     setValue(value) {
       this.editor.setValue(value)
-      if (this.viewer) {
+      if (this.viewer && this.showViewer) {
         this.viewerHandle()
       }
     },
@@ -382,8 +387,8 @@ export default {
       this.editor.exec(cmd)
     },
     /**
-     * viewer模式处理
-     */
+       * viewer模式处理
+       */
     viewerHandle() {
       const mainDom = $(`#${this.id}`)
       mainDom.hide()
