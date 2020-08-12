@@ -13,7 +13,7 @@
   "dependencies": {
     "axios": "0.19.2",
     "core-js": "3.6.4",
-    "jquery": "3.4.1",
+    "jquery": "3.5.0",
     "spark-md5": "3.0.1",
     "tui-editor": "1.4.10",
     "v-viewer": "1.4.2",
