@@ -1,13 +1,13 @@
 {
   "name": "pk-view",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "pk项目的组件库",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib --name pk-view --dest lib package/index.js"
+    "lib": "vue-cli-service build --target lib --name pkView --dest lib package/index.js"
   },
   "main": "lib/pk-view.umd.min.js",
   "dependencies": {
