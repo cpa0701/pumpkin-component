@@ -1,6 +1,6 @@
 {
   "name": "pk-view",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "pk项目的组件库",
   "private": false,
   "scripts": {
@@ -9,7 +9,7 @@
     "lint": "vue-cli-service lint",
     "lib": "vue-cli-service build --target lib --name pkView --dest lib package/index.js"
   },
-  "main": "lib/pk-view.umd.min.js",
+  "main": "lib/pkView.umd.min.js",
   "dependencies": {
     "axios": "0.19.2",
     "core-js": "3.6.4",
